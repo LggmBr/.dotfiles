@@ -1,0 +1,94 @@
+palette = "catppuccin_macchiato"
+
+format = """
+$time[](fg:Base bg:blue)$os[](bg:Mauve fg:Blue)$username$sudo[](bg:Base fg:Mauve)[](bg:Lavender fg:Base)$directory[](fg:Lavender bg:Base)$git_branch[](fg:Base bg:Yellow)$cmd_duration[](fg:Yellow)
+$character\
+"""
+
+add_newline = false
+
+[character]
+format = "$symbol"
+success_symbol = "[ ](Green)"
+error_symbol = "[ ](Red)"
+
+[os]
+style = "bg:Blue fg:Red"
+format = "[ $symbol ]($style)"
+disabled = false
+[os.symbols]
+Windows = ""
+Debian = ""
+Arch = ""
+NixOS = ""
+
+[username]
+show_always = true
+style_user = "bg:Mauve Base Bold"
+style_root = "bg:Mauve Base Bold"
+format = '[ $user ]($style)'
+disabled = false
+
+[directory]
+style = "bg:Lavender Base bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+use_os_path_sep = false
+
+[directory.substitutions]
+style = "fg:Red"
+format = "[$symbol]($style)"
+"~" = " "
+" /.config" = " "
+
+[time]
+style = "bold Lavender bg:Base"
+utc_time_offset = "-3"
+time_format = "%T"
+format = "[ $time ]($style)"
+disabled = false
+
+[sudo]
+style = "fg:Base bg:Red"
+symbol = "  "
+format = "[](fg:Mauve bg:Red)[$symbol]($style)[](fg:Red bg:Mauve)"
+disabled = false
+allow_windows = true
+
+[git_branch]
+format = "[ $symbol$branch(:$remote_branch)]($style)[](fg:Peach bg:Base)"
+style = "bg:Peach fg:Base"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "fg:Base bg:Yellow"
+show_milliseconds = true
+
+[palettes.catppuccin_macchiato]
+rosewater = "#f4dbd6"
+flamingo = "#f0c6c6"
+pink = "#f5bde6"
+mauve = "#c6a0f6"
+red = "#ed8796"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6da95"
+teal = "#8bd5ca"
+sky = "#91d7e3"
+sapphire = "#7dc4e4"
+blue = "#8aadf4"
+lavender = "#b7bdf8"
+text = "#cad3f5"
+subtext1 = "#b8c0e0"
+subtext0 = "#a5adcb"
+overlay2 = "#939ab7"
+overlay1 = "#8087a2"
+overlay0 = "#6e738d"
+surface2 = "#5b6078"
+surface1 = "#494d64"
+surface0 = "#363a4f"
+base = "#24273a"
+mantle = "#1e2030"
+crust = "#181926"
