@@ -1,7 +1,7 @@
 palette = "catppuccin_macchiato"
 
 format = """
-$time[](fg:Base bg:blue)$os[](bg:Mauve fg:Blue)$username$sudo[](bg:Base fg:Mauve)[](bg:Lavender fg:Base)$directory[](fg:Lavender bg:Base)$git_branch[](fg:Base bg:Yellow)$cmd_duration[](fg:Yellow)
+$os[](bg:Mauve fg:Blue)$username$sudo[](bg:Base fg:Mauve)[](bg:Lavender fg:Base)$directory[](fg:Lavender bg:Base)$git_branch[](fg:Base)
 $character\
 """
 
@@ -42,13 +42,6 @@ format = "[$symbol]($style)"
 "~" = " "
 " /.config" = " "
 
-[time]
-style = "bold Lavender bg:Base"
-utc_time_offset = "-3"
-time_format = "%T"
-format = "[ $time ]($style)"
-disabled = false
-
 [sudo]
 style = "fg:Base bg:Red"
 symbol = "  "
@@ -57,13 +50,8 @@ disabled = false
 allow_windows = true
 
 [git_branch]
-format = "[ $symbol$branch(:$remote_branch)]($style)[](fg:Peach bg:Base)"
+format = "[](bg:Peach fg:Base)[$symbol$branch(:$remote_branch)]($style)[](fg:Peach bg:Base)"
 style = "bg:Peach fg:Base"
-
-[cmd_duration]
-format = "[$duration]($style)"
-style = "fg:Base bg:Yellow"
-show_milliseconds = true
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
