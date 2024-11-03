@@ -11,24 +11,24 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "sans 8"
+theme.font          = "jetbrains mono NF 10"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
-theme.bg_systray    = theme.bg_normal
+theme.bg_normal     = "#232136"
+theme.bg_focus      = "#56526e"
+theme.bg_urgent     = "#eb6f92"
+theme.bg_minimize   = "#2a273f"
+theme.bg_systray    = "#393552"
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#e0def4"
+theme.fg_focus      = "#e0def4"
+theme.fg_urgent     = "#e0def4"
+theme.fg_minimize   = "#908caa"
 
-theme.useless_gap   = dpi(0)
+theme.useless_gap   = dpi(4)
 theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
-theme.border_marked = "#91231c"
+theme.border_normal = "#2a273f"
+theme.border_focus  = "#c4a7e7"
+theme.border_marked = "#3e8fb0"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -57,6 +57,8 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
+theme.notification_border_color = "#c4a7e7"
+theme.notification_border_width = dpi(1)
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
