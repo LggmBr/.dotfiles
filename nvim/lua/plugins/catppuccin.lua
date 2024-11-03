@@ -42,6 +42,7 @@ return {
 				nvimtree = true,
 				treesitter = true,
 				notify = false,
+        fzf = true,
 				mini = {
 					enabled = true,
 					indentscope_color = "",
