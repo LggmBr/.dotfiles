@@ -1,0 +1,10 @@
+general.import = ["~/.dotfiles/alacritty/theme.toml"]
+
+[window]
+  opacity = 0.6
+
+[font]
+  normal.family = "JetBrains Mono NF"
+  bold.family = "JetBrains Mono NF"
+  italic.family = "JetBrains Mono NF"
+  bold_italic.family = "JetBrains Mono NF"
