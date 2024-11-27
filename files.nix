@@ -6,6 +6,7 @@
     ".config/starship.toml".source = ./starship.toml;
     ".config/nvim".source = ./nvim;
     ".config/kanata/config.kbd".source = ./kanata/config.kbd;
+    ".config/hypr".source = ./hypr;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
