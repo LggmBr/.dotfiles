@@ -12,7 +12,7 @@
 )
 
 (defsrc 
-  a s d f
+  a s d f g
   h j k l cdl
   caps
 )
@@ -29,16 +29,25 @@
   cdl-mod (tap-hold $tap-time $hold-time cdl rmet)
 
   esc-arrow (tap-hold $tap-time $hold-time esc (layer-while-held arrows))
+
+  g-mode (layer-switch gaming)
+  dft-mode (layer-switch base)
 )
 
 (deflayer base
-  @a-mod @s-mod @d-mod @f-mod
+  @a-mod @s-mod @d-mod @f-mod g
   h @j-mod @k-mod @l-mod @cdl-mod
   @esc-arrow
 )
 
 (deflayer arrows
-  _ _ _ _
+  @dft-mode _ _ _ @g-mode
   left down up right _
   _
+)
+
+(deflayer gaming
+  a s d f g
+  h j k l cdl
+  @esc-arrow
 )
