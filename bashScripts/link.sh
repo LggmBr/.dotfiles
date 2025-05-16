@@ -11,6 +11,7 @@ ln -srf $dotfiles/hypr $HOME/.config/
 # Single file links:
 ln -srf $dotfiles/starship.toml $HOME/.config/starship.toml
 ln -srf $dotfiles/.bashrc $HOME/.bashrc
+ln -srf $dotfiles/kanata/config.kbd $HOME/.config/kanata/config.kbd
 
 # Links that require root privileges:
-sudo ln -srf $dotfiles/kanata/config.kbd /etc/kanata/config.kbd
+sudo cp -f $dotfiles/systemd/kanata.service /etc/systemd/system/kanata.service
