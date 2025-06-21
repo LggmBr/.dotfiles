@@ -6,6 +6,9 @@ vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
+-- hover
+vim.keymap.set({ "v", "n" }, "<leader>h", vim.lsp.buf.hover)
+
 -- maps "jj" to escape
 vim.keymap.set("i", "jj", "<Esc>")
 
