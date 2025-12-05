@@ -1,27 +1,37 @@
 palette = "catppuccin_mocha"
 
 format = """
- $username$sudo > $directory > $git_branch
- $character \
+$os[](bg:Mauve fg:Blue)$username$sudo[](bg:Base fg:Mauve)[](bg:Lavender fg:Base)$directory[](fg:Lavender bg:Base)$git_branch[](fg:Base)
+$character\
 """
 
 add_newline = false
 
 [character]
 format = "$symbol"
-success_symbol = "[>](Green)"
-error_symbol = "[>](Red)"
+success_symbol = "[ ](Green)"
+error_symbol = "[ ](Red)"
+
+[os]
+style = "bg:Blue fg:Red"
+format = "[ $symbol ]($style)"
+disabled = false
+[os.symbols]
+Windows = ""
+Debian = ""
+Arch = ""
+NixOS = ""
 
 [username]
 show_always = true
-style_user = "fg:Mauve Green Bold"
-style_root = "fg:Mauve Red Bold"
-format = '[$user]($style)'
+style_user = "bg:Mauve Base Bold"
+style_root = "bg:Mauve Base Bold"
+format = '[ $user ]($style)'
 disabled = false
 
 [directory]
-style = "fg:Lavender bold"
-format = "[$path]($style)"
+style = "bg:Lavender Base bold"
+format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 use_os_path_sep = false
@@ -33,15 +43,15 @@ format = "[$symbol]($style)"
 " /.config" = " "
 
 [sudo]
-style = "fg:Red"
-symbol = "*"
-format = " [$symbol]($style)"
+style = "fg:Base bg:Red"
+symbol = "  "
+format = "[](fg:Mauve bg:Red)[$symbol]($style)[](fg:Red bg:Mauve)"
 disabled = false
 allow_windows = true
 
 [git_branch]
-format = "[$symbol$branch(:$remote_branch)]($style)"
-style = "fg:Peach"
+format = "[](bg:Peach fg:Base)[$symbol$branch(:$remote_branch)]($style)[](fg:Peach bg:Base)"
+style = "bg:Peach fg:Base"
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"

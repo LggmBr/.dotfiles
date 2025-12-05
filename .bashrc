@@ -18,3 +18,13 @@ alias passwdfix="faillock --reset"
 
 # PATH Variable
 PATH=/home/lggm/.cargo/bin:$HOME/unipdf-cli/cmd/unipdf:$PATH
+
+export EDITOR=nvim
+export VISUAL=nvim
+export ZK_NOTEBOOK_DIR=$HOME/notes/
+
+alias batt='upower -e | grep BAT0 | xargs upower -i | grep -E "percentage|state"'
+alias log=$HOME/log.sh
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
