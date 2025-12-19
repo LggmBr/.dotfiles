@@ -7,6 +7,7 @@ ln -srf $dotfiles/wlogout $HOME/.config/
 ln -srf $dotfiles/waybar $HOME/.config/
 ln -srf $dotfiles/nvim $HOME/.config/
 ln -srf $dotfiles/hypr $HOME/.config/
+ln -srf $dotfiles/tmux $HOME/.config/
 
 # Single file links:
 ln -srf $dotfiles/starship.toml $HOME/.config/starship.toml
