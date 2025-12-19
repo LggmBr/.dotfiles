@@ -2,9 +2,16 @@ general.import = ["~/.dotfiles/alacritty/theme.toml"]
 
 [window]
   opacity = 0.6
+  dynamic_padding = true
 
 [font]
   normal.family = "JetBrains Mono NF"
   bold.family = "JetBrains Mono NF"
   italic.family = "JetBrains Mono NF"
   bold_italic.family = "JetBrains Mono NF"
+
+[cursor]
+  style = { shape = "Block", blinking = "Off" }
+
+[terminal]
+  shell = "/bin/zsh"
