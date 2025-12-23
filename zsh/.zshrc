@@ -24,6 +24,7 @@ export VISUAL=nvim
 export ZK_NOTEBOOK_DIR=$HOME/notes/
 
 alias batt='upower -e | grep BAT0 | xargs upower -i | grep -E "percentage|state"'
+alias cd=z
 
 bindkey -s "^f" "$HOME/tmux-sessionizer.sh\n"
 
