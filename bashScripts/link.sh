@@ -12,6 +12,7 @@ ln -srf $dotfiles/tmux $HOME/.config/
 # Single file links:
 ln -srf $dotfiles/starship.toml $HOME/.config/starship.toml
 ln -srf $dotfiles/.bashrc $HOME/.bashrc
+ln -srf $dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -srf $dotfiles/kanata/config.kbd $HOME/.config/kanata/config.kbd
 
 # Links that require root privileges:
