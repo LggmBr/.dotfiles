@@ -19,6 +19,10 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 
+export EDITOR=nvim
+export VISUAL=nvim
+export ZK_NOTEBOOK_DIR=$HOME/notes/
+
 alias batt='upower -e | grep BAT0 | xargs upower -i | grep -E "percentage|state"'
 
 bindkey -s "^f" "$HOME/tmux-sessionizer.sh\n"
